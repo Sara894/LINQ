@@ -7,7 +7,7 @@ namespace LINQ
     {
         static void Main(string[] args)
         {
-            string[] people = { "Tom", "Tailer","Bob","Sam","Tim" };
+            string[] people = { "Tom", "Tailer","Bob","Sam","Tim","Tomas","Tomsin" };
 
             //создаем новый список для результатов
             var selectedPeople = new List<string>();
