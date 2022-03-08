@@ -15,6 +15,9 @@ namespace LINQ
 
             foreach (string person in selectedPeople)
                 Console.WriteLine(person);
+
+            int number = (from p in people where p.ToUpper().StartsWith("T") select p).Count();
+            Console.WriteLine(number);
         }
     }
 }
