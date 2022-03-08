@@ -11,11 +11,7 @@ namespace LINQ
             //источник данных - любой
             string[] people = { "Tom", "Tim", "Masha", "Mitya" };
             //массив для результата запроса
-            var selectedPeople = from p in people //передаем каждый элемент из people в переменную p
-                                 where p.ToUpper().StartsWith('T')//фильтрация по критерию
-                                 orderby p //сортируем по возрастанию
-                                 select p //выбираем объект в создаваемую коллекцию
-                                 ;
+            var selectedPeople = people.Where(p => p.ToUpper().StartsWith("T")).OrderBy(p=>p);
 
             foreach (string person in selectedPeople)
                 Console.WriteLine(person);
